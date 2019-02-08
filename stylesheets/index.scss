@@ -37,6 +37,7 @@ a {
 }
 .btn {
   background-color: $highlighted-colour;
+
   color: #fff;
   font-weight: 400;
   text-decoration: none;
@@ -54,6 +55,7 @@ a {
 
   &:hover {
     color: #fff;
+
     background-color: darken($highlighted-colour, 3%);
 
     transform: translateY(-2px);
@@ -63,6 +65,14 @@ a {
     transform: translateY(0px);
     box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0), 0 5px 15px 0 rgba(37, 44, 97, 0);
     transition: background-color 0.05s ease-out, box-shadow 0.05s ease-out, transform 0.05s ease-out;
+  }
+
+  &.-external {
+    &:hover {
+      background-image: url(../img/svg/external-link.svg);
+      background-repeat: no-repeat;
+      background-position: calc(100% - 5px) 5px;
+    }
   }
 }
 .underlined {

@@ -73,6 +73,10 @@ a {
     transform: translateY(0px);
     box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0), 0 5px 15px 0 rgba(37, 44, 97, 0);
     transition: background-color 0.05s ease-out, box-shadow 0.05s ease-out, transform 0.05s ease-out; }
+  .btn.-external:hover {
+    background-image: url(../img/svg/external-link.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 5px) 5px; }
 
 .underlined {
   position: relative; }
