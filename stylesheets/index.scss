@@ -12,6 +12,8 @@ $dark-typo: #2A2A2A;
 $regular-typo: #7d7d7d;
 $highlighted-colour: #0076FF;
 
+$motion-timing: 0.15s;
+
 // Micro components
 p {
   line-height: 34px;
@@ -26,6 +28,8 @@ p {
 a {
   color: $highlighted-colour;
   text-decoration: none;
+
+  transition: color $motion-timing ease-out;
 
   &:hover {
     color: darken($highlighted-colour, 10%);
@@ -46,17 +50,18 @@ a {
 
   transform: translate(0px, 0px);
 
-  transition: background-color 0.15s ease-out, box-shadow 0.15s ease-out, transform 0.15s ease-out;
+  transition: background-color $motion-timing ease-out, box-shadow $motion-timing ease-out, transform $motion-timing ease-out;
 
   &:hover {
     color: #fff;
     background-color: darken($highlighted-colour, 3%);
 
     transform: translateY(-2px);
-    box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2), 0 5px 15px 0 rgba(37, 44, 97, 0.15);
+    box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.3), 0 5px 15px 0 rgba(37, 44, 97, 0.3);
   }
   &:focus {
     transform: translateY(0px);
+    box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0), 0 5px 15px 0 rgba(37, 44, 97, 0);
     transition: background-color 0.05s ease-out, box-shadow 0.05s ease-out, transform 0.05s ease-out;
   }
 }
@@ -212,9 +217,17 @@ section {
 
     margin-bottom: 35px;
   }
+  img {
+    margin-bottom: 30px;
+  }
   .__highlighted {
     color: $highlighted-colour;
     line-height: 32px;
+  }
+
+  // modifier
+  .btn {
+    margin-top: 40px;
   }
 }
 
