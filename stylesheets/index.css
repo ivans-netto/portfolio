@@ -152,8 +152,7 @@ section {
   section:first-of-type {
     margin-top: 100px; }
   section:last-of-type {
-    margin-bottom: 0px;
-    padding-bottom: 100px; }
+    margin-bottom: 0px; }
   section header {
     margin-bottom: 50px; }
     section header h1 {
@@ -206,5 +205,23 @@ section {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px; }
+
+.check-out-more {
+  background-color: #FBFBFB; }
+  .check-out-more .__half {
+    width: 50%; }
+    .check-out-more .__half img {
+      width: 100%; }
+  .check-out-more h1 {
+    font-size: 48px;
+    color: #2A2A2A; }
+    .check-out-more h1 .__highlighted {
+      color: #0076FF; }
+  .check-out-more .container {
+    display: flex;
+    align-items: center;
+    height: 600px; }
+  .check-out-more .btn {
+    margin-top: 40px; }
 
 /*# sourceMappingURL=index.css.map */

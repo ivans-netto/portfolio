@@ -176,7 +176,6 @@ section {
   }
   &:last-of-type {
     margin-bottom: 0px;
-    padding-bottom: 100px;
   }
 
   header {
@@ -257,5 +256,35 @@ section {
     justify-content: space-between;
 
     margin-bottom: 50px;
+  }
+}
+
+.check-out-more{
+  background-color: $secondary-bg;
+
+  .__half {
+    width: 50%;
+
+    img {
+      width: 100%;
+    }
+  }
+  h1 {
+    font-size: 48px;
+    color: $dark-typo;
+
+    .__highlighted {
+      color: $highlighted-colour;
+    }
+  }
+
+  // modifier
+  .container {
+    display: flex;
+    align-items: center;
+    height: 600px;
+  }
+  .btn {
+    margin-top: 40px;
   }
 }
