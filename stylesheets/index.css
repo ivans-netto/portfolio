@@ -181,6 +181,8 @@ section {
   section.-project-section {
     margin-top: 300px;
     margin-bottom: 300px; }
+    section.-project-section:first-of-type {
+      margin-top: 200px; }
   section header {
     margin-bottom: 50px; }
     section header h1 {
