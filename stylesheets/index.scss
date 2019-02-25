@@ -24,6 +24,19 @@ p {
 .container {
   width: 950px;
   margin: 0 auto;
+
+  .__splitting-blocks {
+    display: flex;
+    justify-content: space-around;
+
+    .__half {
+      width: 50%;
+
+      &.-breathe-on-left-side {
+        padding-left: 40px;
+      }
+    }
+  }
 }
 a {
   color: $highlighted-colour;
@@ -191,6 +204,10 @@ section {
   &:last-of-type {
     margin-bottom: 0px;
   }
+  &.-project-section {
+    margin-top: 300px;
+    margin-bottom: 200px;
+  }
 
   header {
     margin-bottom: 50px;
@@ -202,13 +219,6 @@ section {
     span {
       font-size: 29px;
     }
-  }
-
-  .__40-perc-block {
-    width: 40%;
-  }
-  .__60-perc-block {
-    width: 60%;
   }
 }
 .mockups {

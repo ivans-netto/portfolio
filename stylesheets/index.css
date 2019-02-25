@@ -45,6 +45,13 @@ p {
 .container {
   width: 950px;
   margin: 0 auto; }
+  .container .__splitting-blocks {
+    display: flex;
+    justify-content: space-around; }
+    .container .__splitting-blocks .__half {
+      width: 50%; }
+      .container .__splitting-blocks .__half.-breathe-on-left-side {
+        padding-left: 40px; }
 
 a {
   color: #0076FF;
@@ -159,6 +166,9 @@ section {
   margin-bottom: 200px; }
   section:last-of-type {
     margin-bottom: 0px; }
+  section.-project-section {
+    margin-top: 300px;
+    margin-bottom: 200px; }
   section header {
     margin-bottom: 50px; }
     section header h1 {
@@ -166,10 +176,6 @@ section {
       font-weight: 400; }
     section header span {
       font-size: 29px; }
-  section .__40-perc-block {
-    width: 40%; }
-  section .__60-perc-block {
-    width: 60%; }
 
 .mockups.-mockup-plus-metrics {
   display: flex;
