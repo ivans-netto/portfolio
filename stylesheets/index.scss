@@ -152,6 +152,10 @@ body {
   h2 {
     font-weight: 400;
     font-size: 48px;
+
+    &.-center {
+      text-align: center;
+    }
   }
   .__bottom-header {
     height: calc(100% - #{$navs-padding} - #{$logos-height});
@@ -173,6 +177,9 @@ body {
 
       line-height: 30px;
       font-size: 16px
+    }
+    .__projecst-illustration{
+      margin-top: 80px;
     }
   }
 }

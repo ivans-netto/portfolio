@@ -133,6 +133,8 @@ body {
   .page-header h2 {
     font-weight: 400;
     font-size: 48px; }
+    .page-header h2.-center {
+      text-align: center; }
   .page-header .__bottom-header {
     height: calc(100% - 40px - 33px);
     display: flex;
@@ -149,6 +151,8 @@ body {
       color: #989898;
       line-height: 30px;
       font-size: 16px; }
+    .page-header .__call .__projecst-illustration {
+      margin-top: 80px; }
 
 section {
   margin-top: 200px;
