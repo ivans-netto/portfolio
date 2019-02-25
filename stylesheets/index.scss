@@ -203,6 +203,30 @@ section {
       font-size: 29px;
     }
   }
+
+  .__40-perc-block {
+    width: 40%;
+  }
+  .__60-perc-block {
+    width: 60%;
+  }
+}
+.mockups {
+  &.-mockup-plus-metrics {
+    display: flex;
+    justify-content: space-around;
+
+    .__mock {
+      width: 77.5%;
+      padding-right: 40px;
+    }
+    .__metrics {
+      width: 22.5%;
+    }
+  }
+  img {
+    width: 100%;
+  }
 }
 
 .blocks {
