@@ -166,6 +166,13 @@ body {
         margin-right: 0;
       }
     }
+    a {
+      color: $regular-typo;
+
+      &:hover {
+        color: $highlighted-colour;
+      }
+    }
   }
   h1 {
     height: $logos-height;
