@@ -177,16 +177,18 @@ section {
     section header span {
       font-size: 29px; }
 
-.mockups.-mockup-plus-metrics {
-  display: flex;
-  justify-content: space-around; }
-  .mockups.-mockup-plus-metrics .__mock {
-    width: 77.5%;
-    padding-right: 40px; }
-  .mockups.-mockup-plus-metrics .__metrics {
-    width: 22.5%; }
-.mockups img {
-  width: 100%; }
+.mockups {
+  margin-top: 50px; }
+  .mockups.-mockup-plus-metrics {
+    display: flex;
+    justify-content: space-around; }
+    .mockups.-mockup-plus-metrics .__mock {
+      width: 77.5%;
+      padding-right: 40px; }
+    .mockups.-mockup-plus-metrics .__metrics {
+      width: 22.5%; }
+  .mockups img {
+    width: 100%; }
 
 .blocks {
   display: flex;
