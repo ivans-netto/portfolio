@@ -27,13 +27,28 @@ p {
 
   .__splitting-blocks {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+
+    &.-breathe-top {
+      margin-top: 50px;
+    }
 
     .__half {
       width: 50%;
 
       &.-breathe-on-left-side {
         padding-left: 40px;
+      }
+      &.-gap {
+        width: calc(50% - 10px);
+      }
+
+      // modifier
+      .btn {
+        margin-top: 40px;
+      }
+      img {
+        width: 100%;
       }
     }
   }
@@ -80,7 +95,7 @@ a {
     transition: background-color 0.05s ease-out, box-shadow 0.05s ease-out, transform 0.05s ease-out;
   }
 
-  &.-external {
+  &[target="_blank"] {
     &:hover {
       background-image: url(../img/svg/external-link.svg);
       background-repeat: no-repeat;
@@ -206,7 +221,7 @@ section {
   }
   &.-project-section {
     margin-top: 300px;
-    margin-bottom: 200px;
+    margin-bottom: 300px;
   }
 
   header {
@@ -215,6 +230,10 @@ section {
     h1 {
       font-size: 48px;
       font-weight: 400;
+
+      span {
+        font-size: 38px;
+      }
     }
     span {
       font-size: 29px;

@@ -47,11 +47,19 @@ p {
   margin: 0 auto; }
   .container .__splitting-blocks {
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-between; }
+    .container .__splitting-blocks.-breathe-top {
+      margin-top: 50px; }
     .container .__splitting-blocks .__half {
       width: 50%; }
       .container .__splitting-blocks .__half.-breathe-on-left-side {
         padding-left: 40px; }
+      .container .__splitting-blocks .__half.-gap {
+        width: calc(50% - 10px); }
+      .container .__splitting-blocks .__half .btn {
+        margin-top: 40px; }
+      .container .__splitting-blocks .__half img {
+        width: 100%; }
 
 a {
   color: #0076FF;
@@ -80,7 +88,7 @@ a {
     transform: translateY(0px);
     box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0), 0 5px 15px 0 rgba(37, 44, 97, 0);
     transition: background-color 0.05s ease-out, box-shadow 0.05s ease-out, transform 0.05s ease-out; }
-  .btn.-external:hover {
+  .btn[target="_blank"]:hover {
     background-image: url(../img/svg/external-link.svg);
     background-repeat: no-repeat;
     background-position: calc(100% - 5px) 5px; }
@@ -168,12 +176,14 @@ section {
     margin-bottom: 0px; }
   section.-project-section {
     margin-top: 300px;
-    margin-bottom: 200px; }
+    margin-bottom: 300px; }
   section header {
     margin-bottom: 50px; }
     section header h1 {
       font-size: 48px;
       font-weight: 400; }
+      section header h1 span {
+        font-size: 38px; }
     section header span {
       font-size: 29px; }
 
